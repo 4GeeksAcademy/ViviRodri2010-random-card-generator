@@ -1,1 +1,49 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 30px;
+  width: 350px;
+  height: 600px;
+}
+.topSuitContainer {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+.topSuitContainer * {
+  padding: 60px;
+}
+.valueContainer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.value {
+  font-size: 180px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.bottomSuitContainer {
+  height: 150px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.bottomSuitContainer * {
+  padding: 60px;
+}
+.suit::before {
+  transform: scale(5, 5);
+}
+.flip::before {
+  transform: scale(-5, -5);
+}
+.red {
+  color: red;
+}
